@@ -436,7 +436,6 @@ contract AAAAPool is Configable, BaseMintField
         _mintBorrower();
     }
 
-    // todo fix token is supplyToken or collateralToken
     function _currentReward() internal override view returns (uint) {
         uint remain;
         if(IConfig(config).mint() != address(0)) {
